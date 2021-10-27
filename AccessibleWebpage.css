@@ -1,0 +1,150 @@
+table {
+    margin-left: 15em;
+    border: 2px solid black;
+    max-width: 30em;
+}
+th {
+    border: 2px solid black;
+}
+td {
+    border: 2px solid black;
+}
+
+form {
+    margin-left: 15em;
+    max-width: 10em;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+body {
+    background-color: white;
+    margin: 0px 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    background-color: rgb(39, 39, 68);
+}
+
+header {
+    background-color: rgb(39, 39, 68);
+    margin: auto;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(39, 39, 68);
+    color: white;
+    margin: auto;
+    min-height: 3em;
+}
+
+.flex {
+    display: flex;
+    min-height: 110vh;
+    border-bottom: 3px dashed rgb(39, 39, 68);
+    flex-direction: column;
+}
+
+
+
+
+h1 {
+    color:rgb(45, 39, 68);
+    margin-left: 5em;
+    margin-right: 20em;
+    margin-top: 30vh;
+    margin-bottom: 0.25em;
+    font-size: 3em;
+    
+}
+
+img {
+    max-width: 430px;
+    max-height: 126px;
+    margin-left: 15em;
+}
+
+h2{
+    font-size: 1.5em;
+    margin-left: 10em;
+    margin-right: 15em;
+}
+
+
+
+ul {
+    display:                flex;    
+    flex-flow:              nowrap;
+    justify-content:        space-evenly;
+    align-items:            center;
+    align-content:          center;
+    list-style-type: none;
+    background-color: rgb(39, 39, 68);
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+
+li {
+    text-align: center;
+    margin-top: 0.2em;
+
+}
+
+#skip_to_main {
+    text-align: left;
+    color: white;
+    margin-left: 1em;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+a.nav {
+    color: white;
+    font-size: 1.75em;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(0, 84, 180);
+    text-decoration: none;
+}
+
+@media print {
+    header, footer, aside, .navigation {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-right: 1em;
+    }
+
+    .flex {
+        min-height: 90vh;
+        border: none;  
+    }
+
+    h2 {
+        font-size: 1em;
+        
+    }
+
+    a:after {
+        content: "("attr(href)")";
+    }
+}
+

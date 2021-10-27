@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AccessibleWebpage</title>
+    <link rel="stylesheet" href="AccessibleWebpage.css">
+   
+    <!--
+    Nicholas Handberg, Lab 5, 4/15/2021
+    Accessibility
+    Creating a webpage using Accessibility features 
+    -->
+  </head>
+  <body>
+    
+    <div class = "navigation">
+      <header><a class = "nav" id = "skip_to_main" href = "#form_example">Skip to main content</a></header>
+        <ul>
+            <li><a class = "nav" href = "Page1.html#main_content">Accessibility</a></li>
+            <li><a class = "nav" href = "Page1.html#pour">POUR</a></li>
+            <li><a class = "nav" href = "Page1.html#features">Features</a></li>
+            <li><a class = "nav" href = "#form_example">Form Example</a></li>
+            <li><a class = "nav" href = "#table_example">Table Example</a></li>
+            <li><a class = "nav" href = "#image_example">Image Example</a></li>
+            
+        </ul>
+    </div>
+
+
+    
+    <div class = "main">
+      <div class = "flex"  id = "form_example">
+        <h1>accessible form example</h1>
+        <form>
+            <fieldset>
+            <legend>Schedule Appointment</legend>
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name"><br><br>
+            <label for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name"><br><br>
+            <label for="appointment_date">Appointment Date:</label>
+            <input type="date" id="appointment_date" name="appointment_date"><br><br>
+            <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <h2>This form is more accessible because it uses a fieldset as well as labels for each input box.</h2>
+      </div>
+      
+      <div class = "flex"  id = "table_example">
+        <h1>accessible table example</h1>
+        <table>
+            <caption>Appointment Availability</caption>
+            <tr>
+              <td></td>
+              <th scope="col">Monday</th>
+              <th scope="col">Tuesday</th>
+              <th scope="col">Wednesday</th>
+              <th scope="col">Thursday</th>
+              <th scope="col">Friday</th>
+            </tr>
+            <tr>
+              <th scope="row">7AM to 10AM</th>
+              <td>Open</td>
+              <td>Closed</td>
+              <td>Open</td>
+              <td>Closed</td>
+              <td>Open</td>
+            </tr>
+            <tr>
+              <th scope="row">10AM to 1PM</th>
+              <td>Open</td>
+              <td>Closed</td>
+              <td>Open</td>
+              <td>Closed</td>
+              <td>Closed</td>
+            </tr>
+            <tr>
+                <th scope="row">1PM to 4PM</th>
+                <td>Closed</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+              </tr>
+          </table>
+          <h2>Due to this table having row and column headers, it is made more accessible by using scope for the rows and columns.</h2>
+      </div>
+
+      <div class = "flex" id = "image_example">
+        <h1>accessible image example</h1>
+        <img src = "graphic/generic_logo.png" alt = "company logo">
+        <h2>This image is made more accessible by using an alt tag which describes the image content.</h2>
+      </div>
+
+      <footer></footer>
+    </div>
+    
+    
+
+  </body>
+</html>
